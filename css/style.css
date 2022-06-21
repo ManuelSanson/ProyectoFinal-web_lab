@@ -63,13 +63,13 @@ body {
   .containerIndex .seccionesIndex {
     grid-area: seccionesIndex;
     display: flex;
-    flex-direction: column;
-    display: flex;
     justify-content: center;
-    align-items: center; }
-    .containerIndex .seccionesIndex .seccionBienvenida, .containerIndex .seccionesIndex .seccionOpiniones {
+    align-items: center;
+    flex-direction: column; }
+    .containerIndex .seccionesIndex .seccionBienvenida {
       border: dotted;
-      margin: 80px 50px;
+      margin: 80px 60px;
+      padding-top: 15px;
       background-image: linear-gradient(to bottom, #f0f4ef, #b4cded);
       transform: scale(0.94);
       animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1); }
@@ -77,6 +77,21 @@ body {
 @keyframes scale {
   100% {
     transform: scale(1); } }
+    .containerIndex .seccionesIndex .opinion {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 100px; }
+      .containerIndex .seccionesIndex .opinion .seccionOpiniones {
+        border: dotted;
+        margin: 80px 60px;
+        padding-top: 15px;
+        background-image: linear-gradient(to bottom, #f0f4ef, #b4cded);
+        width: 35%; }
+        .containerIndex .seccionesIndex .opinion .seccionOpiniones .carOpiniones .nombreEmpresa {
+          text-align: center;
+          font-family: "Montserrat", sans-serif;
+          font-weight: bold; }
 
 .containerNosotros {
   display: grid;

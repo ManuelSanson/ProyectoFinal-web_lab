@@ -10,23 +10,32 @@
     ;
     .seccionesIndex{
         grid-area: seccionesIndex;
-        display: flex;
-        flex-direction: column;
         @include centeredFlex;
+        flex-direction: column;        
         .seccionBienvenida{
-            border: dotted;
-            margin: 80px 50px;
-            background-image: linear-gradient(to bottom, map-get($bgColors, claro), map-get($bgColors, medio));
+            @include cuadrosDeTexto;
             transform: scale(0.94);
             animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
-        }
-        .seccionOpiniones{
-            @extend .seccionBienvenida
         }
         @keyframes scale {
             100% {
               transform: scale(1);
             }
         }
+        .opinion{
+            @include centeredFlex;
+            margin-bottom: 100px;
+            .seccionOpiniones{
+                @include cuadrosDeTexto;
+                width: 35%;
+                .carOpiniones{
+                    .nombreEmpresa{
+                        text-align: center;
+                        font-family: $fontTexto;
+                        font-weight: bold;
+                    }
+                }                             
+            }
+        }        
     }
 }

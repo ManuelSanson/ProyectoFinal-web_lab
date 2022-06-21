@@ -12,3 +12,9 @@ $fontTexto: 'Montserrat', sans-serif;
     justify-content: center;
     align-items: center;
 }
+@mixin cuadrosDeTexto{
+    border: dotted;
+    margin: 80px 60px;
+    padding-top: 15px;
+    background-image: linear-gradient(to bottom, map-get($bgColors, claro), map-get($bgColors, medio));
+}
