@@ -1,0 +1,14 @@
+.navbar{    
+    grid-area: navbar;    
+    background-color: map-get($bgColors, medio);
+    .menu .nav-link{        
+        @include centeredFlex;
+        color: $letraOscura;
+        font-weight: bold;
+        font-family: $fontTitulos;        
+        &:hover{
+            background-color: map-get($bgColors, oscuro);
+            color: white;
+        }
+    }        
+}

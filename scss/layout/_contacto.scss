@@ -1,0 +1,50 @@
+.containerContacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 0.8fr auto 2fr;
+    grid-template-areas:
+    "encabezado"
+    "navbar"
+    "contacto"
+    "pie"
+    ;
+    .contacto{
+        grid-area: contacto;
+        margin-bottom: 100px;
+        .formularios{
+            display: grid;
+            grid-template-columns: 0.6fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "mensaje" 
+            "opinion";
+            row-gap: 40px;
+            margin: auto 25px;
+            justify-content: center;
+            .mensaje{
+                grid-area: mensaje;
+                .titulo{
+                    padding-left: 0px;
+                }
+                .form{
+                    margin-top: 20px;
+                    .btn{
+                        background-color: map-get($bgColors, medio);
+                    }
+                }
+            }            
+            .opinion{
+                grid-area: opinion;
+                .titulo{
+                    padding-left: 0px;
+                }
+                .form{
+                    margin-top: 20px;
+                    .btn{
+                        background-color: map-get($bgColors, medio);
+                    }
+                }
+            }            
+        }
+    }
+}

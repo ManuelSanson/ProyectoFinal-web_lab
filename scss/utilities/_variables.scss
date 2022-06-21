@@ -1,0 +1,14 @@
+$bgColors:(
+    claro: #f0f4ef,
+    medio: #b4cded,
+    oscuro: #344966,
+);
+$letraOscura: #0d0531;
+$fontHeader: 'JetBrains Mono', monospace;
+$fontTitulos: 'Sora', sans-serif;
+$fontTexto: 'Montserrat', sans-serif;
+@mixin centeredFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

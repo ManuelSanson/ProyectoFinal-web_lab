@@ -1,0 +1,312 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #f0f4ef; }
+
+.titulo_ppal {
+  font-family: "Sora", sans-serif;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 20px; }
+
+.titulo {
+  font-family: "Sora", sans-serif;
+  padding-left: 20px; }
+
+.parrafo {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  text-align: justify;
+  padding: 20px; }
+
+.encabezado {
+  grid-area: encabezado;
+  background-color: #344966;
+  width: 100%; }
+  .encabezado .logo_texto {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .encabezado .logo_texto .logo img {
+      margin-right: 20px;
+      width: 30px;
+      height: 30px; }
+    .encabezado .logo_texto .textoWebLab {
+      font-family: "JetBrains Mono", monospace;
+      color: #0d0531;
+      padding-top: 5px;
+      font-size: 22px; }
+
+.navbar {
+  grid-area: navbar;
+  background-color: #b4cded; }
+  .navbar .menu .nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0d0531;
+    font-weight: bold;
+    font-family: "Sora", sans-serif; }
+    .navbar .menu .nav-link:hover {
+      background-color: #344966;
+      color: white; }
+
+.containerIndex {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 0.8fr auto 2fr;
+  grid-template-areas: "encabezado" "navbar" "seccionesIndex" "pie"; }
+  .containerIndex .seccionesIndex {
+    grid-area: seccionesIndex;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .containerIndex .seccionesIndex .seccionBienvenida, .containerIndex .seccionesIndex .seccionOpiniones {
+      border: dotted;
+      margin: 80px 50px;
+      background-image: linear-gradient(to bottom, #f0f4ef, #b4cded);
+      transform: scale(0.94);
+      animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1); }
+
+@keyframes scale {
+  100% {
+    transform: scale(1); } }
+
+.containerNosotros {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 0.8fr auto 2fr;
+  grid-template-areas: "encabezado" "navbar" "seccionesNosotros" "pie"; }
+  .containerNosotros .seccionesNosotros {
+    grid-area: seccionesNosotros; }
+    .containerNosotros .seccionesNosotros .fotoynosotros {
+      margin-bottom: 100px;
+      padding-left: 20px;
+      padding-right: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1;
+      grid-template-areas: "fotoEquipo seccionesSomosyMision"; }
+      .containerNosotros .seccionesNosotros .fotoynosotros .fotoEquipo {
+        grid-area: fotoEquipo;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .containerNosotros .seccionesNosotros .fotoynosotros .fotoEquipo img {
+          border-radius: 10%;
+          width: 536px; }
+      .containerNosotros .seccionesNosotros .fotoynosotros .seccionesSomosyMision {
+        grid-area: seccionesSomosyMision; }
+    .containerNosotros .seccionesNosotros .descripcionEquipo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 100px;
+      padding-left: 20px;
+      padding-right: 20px; }
+      .containerNosotros .seccionesNosotros .descripcionEquipo img {
+        border-radius: 50%;
+        width: 456px;
+        margin-top: 30px;
+        margin-right: 15px; }
+
+.containerServicios {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 0.8fr auto 2fr;
+  grid-template-areas: "encabezado" "navbar" "servicios" "pie"; }
+  .containerServicios .servicios {
+    grid-area: servicios;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "servicioDiseño" "servicioCreacion" "servicioTraduccion";
+    row-gap: 30px;
+    margin-bottom: 100px; }
+    .containerServicios .servicios .servicioDiseño {
+      grid-area: servicioDiseño; }
+    .containerServicios .servicios .servicioCreacion {
+      grid-area: servicioCreacion; }
+    .containerServicios .servicios .servicioTraduccion {
+      grid-area: servicioTraduccion; }
+
+.containerPortfolio {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 0.8fr auto 2fr;
+  grid-template-areas: "encabezado" "navbar" "portfolio" "pie"; }
+  .containerPortfolio .portfolio {
+    grid-area: portfolio; }
+    .containerPortfolio .portfolio .video {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 70px auto; }
+      .containerPortfolio .portfolio .video iframe {
+        width: 853px;
+        height: 480px; }
+    .containerPortfolio .portfolio .parrafo {
+      text-align: center; }
+      .containerPortfolio .portfolio .parrafo .boton {
+        margin-left: 5px;
+        margin-bottom: 100px;
+        display: inline-block;
+        color: #0d0531;
+        text-decoration: none;
+        padding: 5px 15px;
+        border: 3px solid #b4cded;
+        border-radius: 10px; }
+        .containerPortfolio .portfolio .parrafo .boton:hover {
+          animation: pulsate 1s ease-in-out; }
+
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 25px #0d0531, 0 0 50px #344966; } }
+
+.containerContacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 0.8fr auto 2fr;
+  grid-template-areas: "encabezado" "navbar" "contacto" "pie"; }
+  .containerContacto .contacto {
+    grid-area: contacto;
+    margin-bottom: 100px; }
+    .containerContacto .contacto .formularios {
+      display: grid;
+      grid-template-columns: 0.6fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "mensaje"  "opinion";
+      row-gap: 40px;
+      margin: auto 25px;
+      justify-content: center; }
+      .containerContacto .contacto .formularios .mensaje {
+        grid-area: mensaje; }
+        .containerContacto .contacto .formularios .mensaje .titulo {
+          padding-left: 0px; }
+        .containerContacto .contacto .formularios .mensaje .form {
+          margin-top: 20px; }
+          .containerContacto .contacto .formularios .mensaje .form .btn {
+            background-color: #b4cded; }
+      .containerContacto .contacto .formularios .opinion {
+        grid-area: opinion; }
+        .containerContacto .contacto .formularios .opinion .titulo {
+          padding-left: 0px; }
+        .containerContacto .contacto .formularios .opinion .form {
+          margin-top: 20px; }
+          .containerContacto .contacto .formularios .opinion .form .btn {
+            background-color: #b4cded; }
+
+.pie {
+  grid-area: pie;
+  background-color: #b4cded;
+  display: flex;
+  justify-content: space-between;
+  color: #0d0531;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 15px;
+  padding-right: 15px; }
+  .pie .redes {
+    text-align: center; }
+    .pie .redes .logo-redes img {
+      width: 20px;
+      height: 20px; }
+      .pie .redes .logo-redes img:hover {
+        width: 30px;
+        height: 30px; }
+  .pie .copyright {
+    display: flex;
+    align-items: flex-end; }
+  .pie .datosContacto {
+    text-align: right;
+    line-height: 15px; }
+
+@media screen and (min-width: 321px) and (max-width: 425px) {
+  .parrafo {
+    font-size: 14px; }
+  .titulo {
+    font-size: 18px; }
+  .titulo_ppal {
+    font-size: 20px; }
+  .logo img {
+    width: 15px;
+    height: 15px; }
+  .textoWebLab h2 {
+    font-size: 10px;
+    color: white; }
+  .menu a {
+    font-size: 14px; }
+  .pie {
+    font-size: 10px; }
+    .pie .datosContacto {
+      line-height: 2px; }
+  .containerNosotros .seccionesNosotros .fotoynosotros {
+    margin-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .containerNosotros .seccionesNosotros .fotoynosotros .fotoEquipo img {
+      border-radius: 10%;
+      width: 306px;
+      margin-bottom: 20px; }
+  .containerNosotros .seccionesNosotros .descripcionEquipo {
+    flex-direction: column; }
+    .containerNosotros .seccionesNosotros .descripcionEquipo img {
+      border-radius: 50%;
+      width: 236px; }
+  .portfolio .video iframe {
+    max-width: 100%; }
+  .containerContacto .contacto .formularios {
+    grid-template-columns: 0.9fr;
+    margin: auto 10px; } }
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  .parrafo {
+    font-size: 12px; }
+  .titulo {
+    font-size: 16px; }
+  .titulo_ppal {
+    font-size: 18px; }
+  .logo img {
+    width: 15px;
+    height: 15px; }
+  .textoWebLab h2 {
+    font-size: 8px;
+    color: white; }
+  .menu a {
+    font-size: 12px; }
+  .pie {
+    font-size: 8px; }
+    .pie .datosContacto {
+      line-height: 1px; }
+  .containerNosotros .seccionesNosotros .fotoynosotros {
+    margin-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .containerNosotros .seccionesNosotros .fotoynosotros .fotoEquipo img {
+      border-radius: 10%;
+      width: 286px;
+      margin-bottom: 20px; }
+  .containerNosotros .seccionesNosotros .descripcionEquipo {
+    flex-direction: column; }
+    .containerNosotros .seccionesNosotros .descripcionEquipo img {
+      border-radius: 50%;
+      width: 216px; }
+  .portfolio .video iframe {
+    max-width: 100%; }
+  .containerContacto .contacto .formularios {
+    grid-template-columns: 0.9fr;
+    margin: auto 5px; } }

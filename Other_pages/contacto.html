@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página para contactarte con web_lab y dejar tu opinión">
+    <meta name="keywords" content="web_lab, contacto, opinión, recomendación">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">    
+    <!-- Inician lineas de estilo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Montserrat:wght@300&family=Sora&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">    
+    <title>web_lab-Contacto</title>
+</head>
+
+<body class="containerContacto">
+
+    <!--Inicia el encabezado-->
+    <header class="encabezado p-2">
+        <div class="logo_texto">
+            <div class="logo">
+                <img src="../img/gif1.gif" alt="logo-web_lab">
+            </div>
+            <div class="textoWebLab">
+                <h2>web_lab: Una solución integral para tu sitio web</h2>
+            </div>  
+        </div>        
+    </header>
+    <!--Finaliza el encabezado-->
+
+    <!-- Inicia el menu -->
+    <nav class="navbar navbar-expand-lg py-0">
+        <div class="menu container-fluid">
+          <a class="navbar-brand" href="./contacto.html"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+              <a class="nav-link active" aria-current="page" href="./servicios.html">Servicios</a>
+              <a class="nav-link active" aria-current="page" href="./portfolio.html">Portfolio</a>
+              <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>              
+            </div>
+          </div>
+        </div>
+    </nav>  
+    <!-- Finaliza el menu -->
+
+    <main class="contacto">
+        <h1 class="titulo_ppal">Contacto</h1>
+        <div class="formularios">
+            <!--Inicia formulario de contacto-->
+            <div class="mensaje">
+                <h2 class="titulo">Envíanos un mensaje</h2>
+                <form class="form">                    
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                    </div>
+
+                    <div class="mb-3 col">
+                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                    </div>
+
+                    <div class="mb-3 col">
+                        <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail">
+                    </div>    
+
+                    <div class="mb-3 form-floating">
+                        <textarea class=" form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Déjanos tu mensaje</label>
+                    </div>  
+
+                    <input class="btn" type="submit" value="Enviar">
+                    <input class="btn" type="reset" value="Reiniciar">
+                </form>
+            </div>
+            <!--Finaliza formulario de contacto-->
+
+            
+
+            <!--Inicia formulario de opinion-->
+            <div class="opinion">
+                <h2 class="titulo">Cuéntanos sobre tu experiencia con web_lab</h2>
+                <form class="form">
+                    <div class="campoOpinion">
+                        <p>Del 1 al 5, ¿qué tan satisfecho quedaste con nuestros servicios?</p>
+                        <select class="mb-3 form-select" aria-label="Default select example">
+                            <option selected>Seleccionar</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <p>Del 1 al 5, ¿qué tan probable es que nos recomiendes?</p>
+                        <select class="mb-3 form-select" aria-label="Default select example">
+                            <option selected>Seleccionar</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                                        
+                    <div class="mb-3 form-floating">
+                            <textarea class=" form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Déjanos tu opinión</label>
+                    </div>
+                    
+                    <input class="btn" type="submit" value="Enviar">
+                    <input class="btn" type="reset" value="Reiniciar">
+                </form>
+            </div>
+            <!--Finaliza formulario de opinion-->
+        </div>
+    </main>
+
+    <!--Inicia el footer-->
+    <footer class="pie pt-3">
+        <div class="redes">
+                <p>Síguenos en las redes</p>
+                <a href="https://www.instagram.com/" target="_blank" class="logo-redes"><img src="../img/instagram.png" alt="logo-instagram"></a>
+                <a href="https://www.linkedin.com/" target="_blank" class="logo-redes"><img src="../img/linkedin.png" alt="logo-linkedin"></a>
+        </div>
+        <div class="copyright">
+                <p>web_labⓇ</p>
+        </div>            
+        <div class="datosContacto">
+                <p>info@weblab.com</p>
+                <p>Av. Italia 1234, Oficina 1</p>
+                <p>Cel.: 098898989</p>
+                <p>Tel.: 23083232</p>        
+        </div>
+    </footer>
+    <!--Finaliza el footer-->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: map-get($bgColors, claro);
+}
+
+.titulo_ppal{
+    font-family: $fontTitulos;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+}
+
+.titulo{
+    font-family: $fontTitulos;
+    padding-left: 20px;
+}  
+
+.parrafo{
+    font-family: $fontTexto;
+    font-style: italic;
+    text-align: justify;
+    padding: 20px;
+}

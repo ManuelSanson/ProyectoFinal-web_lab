@@ -1,0 +1,33 @@
+.containerServicios{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 0.8fr auto 2fr;
+    grid-template-areas:
+    "encabezado"
+    "navbar"
+    "servicios"
+    "pie"
+    ;
+    .servicios{
+        grid-area: servicios;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "servicioDiseño"
+        "servicioCreacion"
+        "servicioTraduccion"
+        ;
+        row-gap: 30px;
+        margin-bottom: 100px;
+        .servicioDiseño{
+            grid-area: servicioDiseño;
+        }        
+        .servicioCreacion{
+            grid-area: servicioCreacion;
+        }        
+        .servicioTraduccion{
+            grid-area: servicioTraduccion;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.containerPortfolio{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 0.8fr auto 2fr;
+    grid-template-areas:
+    "encabezado"
+    "navbar"
+    "portfolio"
+    "pie"
+    ;
+    .portfolio{
+        grid-area: portfolio;
+        .video{
+            @include centeredFlex;            
+            margin: 70px auto;
+            iframe{
+                width: 853px;
+                height: 480px;                
+            }
+        }
+        .parrafo{
+            text-align: center;
+            .boton{
+                margin-left: 5px;
+                margin-bottom: 100px;
+                display: inline-block;
+                color: $letraOscura;
+                text-decoration: none;
+                padding: 5px 15px;
+                border: 3px solid map-get($bgColors, medio);
+                border-radius: 10px;
+                &:hover{
+                    animation: pulsate 1s ease-in-out;
+                }
+            }
+        }
+        
+        @keyframes pulsate{
+            0%{
+                box-shadow: 
+                0 0 25px $letraOscura,
+                0 0 50px map-get($bgColors, oscuro);
+            }
+        }
+    }
+}

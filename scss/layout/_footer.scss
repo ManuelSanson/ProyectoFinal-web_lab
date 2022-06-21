@@ -1,0 +1,30 @@
+.pie{
+    grid-area: pie;
+    background-color: map-get($bgColors, medio);
+    display: flex;
+    justify-content: space-between;
+    color: $letraOscura;
+    font-weight: bold;
+    font-family: $fontTexto;
+    padding-left: 15px;
+    padding-right: 15px;
+    .redes{        
+        text-align: center;
+        .logo-redes img{
+            width: 20px;
+            height: 20px;
+            &:hover{
+                width: 30px;
+                height: 30px;
+            }
+        }        
+    }
+    .copyright{        
+        display: flex;
+        align-items: flex-end;
+    }
+    .datosContacto{        
+        text-align: right;
+        line-height: 15px;
+    }
+}

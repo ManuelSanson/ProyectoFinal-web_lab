@@ -1,0 +1,19 @@
+.encabezado{
+    grid-area: encabezado;
+    background-color: map-get($bgColors, oscuro);
+    width: 100%;
+    .logo_texto{
+        @include centeredFlex;
+        .logo img{
+            margin-right: 20px;
+            width: 30px;
+            height: 30px;
+        }
+        .textoWebLab{
+            font-family: $fontHeader;
+            color: $letraOscura;
+            padding-top: 5px;
+            font-size: 22px;
+        }
+    }
+}

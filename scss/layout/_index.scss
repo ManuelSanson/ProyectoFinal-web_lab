@@ -1,0 +1,32 @@
+.containerIndex{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 0.8fr auto 2fr;
+    grid-template-areas:
+    "encabezado"
+    "navbar"
+    "seccionesIndex"
+    "pie"
+    ;
+    .seccionesIndex{
+        grid-area: seccionesIndex;
+        display: flex;
+        flex-direction: column;
+        @include centeredFlex;
+        .seccionBienvenida{
+            border: dotted;
+            margin: 80px 50px;
+            background-image: linear-gradient(to bottom, map-get($bgColors, claro), map-get($bgColors, medio));
+            transform: scale(0.94);
+            animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+        }
+        .seccionOpiniones{
+            @extend .seccionBienvenida
+        }
+        @keyframes scale {
+            100% {
+              transform: scale(1);
+            }
+        }
+    }
+}
