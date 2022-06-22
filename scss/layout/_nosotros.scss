@@ -23,6 +23,8 @@
             .fotoEquipo{
                 grid-area: fotoEquipo;
                 @include centeredFlex;
+                -webkit-animation: flip-in-ver-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: flip-in-ver-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                 img{
                     border-radius: 10%;
                     width: 536px;
@@ -30,6 +32,8 @@
             }
             .seccionesSomosyMision{
                 grid-area: seccionesSomosyMision;
+                -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
             }
         }
         .descripcionEquipo{
@@ -37,13 +41,87 @@
             margin-bottom: 100px;
             padding-left: 20px;
             padding-right: 20px;
-            img{
-                border-radius: 50%;
-                width: 456px;
-                margin-top: 30px;
-                margin-right: 15px;
+            .container {
+                position: relative;
+                width: 60%;
+                .image{
+                    opacity: 1;
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    transition: .5s ease;
+                    backface-visibility: hidden;
+                    border-radius: 50%;                    
+                    margin-top: 20px;
+                }
+                .middle{
+                    transition: .5s ease;
+                    opacity: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    text-align: center;
+                    .text{
+                        background-color: map-get($bgColors, oscuro);
+                        color: $letraOscura;
+                        font-size: 16px;
+                        padding: 16px 32px;
+                        font-weight: bold;
+                        font-family: $fontTitulos;
+                    }
+                }
+                &:hover .image{
+                    opacity: 0.3;
+                    border-radius: 50%;
+                }
+                &:hover .middle{
+                    opacity: 1;
+                }
             }
         }
     }
     
 }
+
+@keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  
+@-webkit-keyframes flip-in-ver-right {
+    0% {
+    -webkit-transform: rotateY(-80deg);
+    transform: rotateY(-80deg);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    opacity: 1;
+    }
+}
+
+@keyframes flip-in-ver-right {
+    0% {
+    -webkit-transform: rotateY(-80deg);
+    transform: rotateY(-80deg);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    opacity: 1;
+    }
+} 
+

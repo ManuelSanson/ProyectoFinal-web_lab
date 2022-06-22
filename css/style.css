@@ -73,10 +73,6 @@ body {
       background-image: linear-gradient(to bottom, #f0f4ef, #b4cded);
       transform: scale(0.94);
       animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1); }
-
-@keyframes scale {
-  100% {
-    transform: scale(1); } }
     .containerIndex .seccionesIndex .opinion {
       display: flex;
       justify-content: center;
@@ -92,6 +88,10 @@ body {
           text-align: center;
           font-family: "Montserrat", sans-serif;
           font-weight: bold; }
+
+@keyframes scale {
+  100% {
+    transform: scale(1); } }
 
 .containerNosotros {
   display: grid;
@@ -112,12 +112,16 @@ body {
         grid-area: fotoEquipo;
         display: flex;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        -webkit-animation: flip-in-ver-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation: flip-in-ver-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
         .containerNosotros .seccionesNosotros .fotoynosotros .fotoEquipo img {
           border-radius: 10%;
           width: 536px; }
       .containerNosotros .seccionesNosotros .fotoynosotros .seccionesSomosyMision {
-        grid-area: seccionesSomosyMision; }
+        grid-area: seccionesSomosyMision;
+        -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+        animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both; }
     .containerNosotros .seccionesNosotros .descripcionEquipo {
       display: flex;
       justify-content: center;
@@ -125,11 +129,69 @@ body {
       margin-bottom: 100px;
       padding-left: 20px;
       padding-right: 20px; }
-      .containerNosotros .seccionesNosotros .descripcionEquipo img {
-        border-radius: 50%;
-        width: 456px;
-        margin-top: 30px;
-        margin-right: 15px; }
+      .containerNosotros .seccionesNosotros .descripcionEquipo .container {
+        position: relative;
+        width: 60%; }
+        .containerNosotros .seccionesNosotros .descripcionEquipo .container .image {
+          opacity: 1;
+          display: block;
+          width: 100%;
+          height: auto;
+          transition: .5s ease;
+          backface-visibility: hidden;
+          border-radius: 50%;
+          margin-top: 20px; }
+        .containerNosotros .seccionesNosotros .descripcionEquipo .container .middle {
+          transition: .5s ease;
+          opacity: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          text-align: center; }
+          .containerNosotros .seccionesNosotros .descripcionEquipo .container .middle .text {
+            background-color: #344966;
+            color: #0d0531;
+            font-size: 16px;
+            padding: 16px 32px;
+            font-weight: bold;
+            font-family: "Sora", sans-serif; }
+        .containerNosotros .seccionesNosotros .descripcionEquipo .container:hover .image {
+          opacity: 0.3;
+          border-radius: 50%; }
+        .containerNosotros .seccionesNosotros .descripcionEquipo .container:hover .middle {
+          opacity: 1; }
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+
+@-webkit-keyframes flip-in-ver-right {
+  0% {
+    -webkit-transform: rotateY(-80deg);
+    transform: rotateY(-80deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    opacity: 1; } }
+
+@keyframes flip-in-ver-right {
+  0% {
+    -webkit-transform: rotateY(-80deg);
+    transform: rotateY(-80deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    opacity: 1; } }
 
 .containerServicios {
   display: grid;
