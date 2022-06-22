@@ -28,6 +28,7 @@
                 }
                 .form{
                     margin-top: 20px;
+                    font-family: $fontTexto;
                     .btn{
                         background-color: map-get($bgColors, medio);
                     }
@@ -40,6 +41,7 @@
                 }
                 .form{
                     margin-top: 20px;
+                    font-family: $fontTexto;
                     .btn{
                         background-color: map-get($bgColors, medio);
                     }

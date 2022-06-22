@@ -14,6 +14,7 @@
         flex-direction: column;        
         .seccionBienvenida{
             @include cuadrosDeTexto;
+            margin: 80px 60px;
             transform: scale(0.94);
             animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
         }
@@ -23,6 +24,7 @@
             margin-bottom: 100px;
             .seccionOpiniones{
                 @include cuadrosDeTexto;
+                margin: 80px 60px;
                 width: 35%;
                 .carOpiniones{
                     .nombreEmpresa{

@@ -30,7 +30,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   text-align: justify;
-  padding: 20px; }
+  padding: 20px;
+  line-height: 24px; }
 
 .encabezado {
   grid-area: encabezado;
@@ -77,9 +78,9 @@ body {
     flex-direction: column; }
     .containerIndex .seccionesIndex .seccionBienvenida {
       border: dotted;
-      margin: 80px 60px;
       padding-top: 15px;
       background-image: linear-gradient(to bottom, #f0f4ef, #b4cded);
+      margin: 80px 60px;
       transform: scale(0.94);
       animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1); }
     .containerIndex .seccionesIndex .opinion {
@@ -89,9 +90,9 @@ body {
       margin-bottom: 100px; }
       .containerIndex .seccionesIndex .opinion .seccionOpiniones {
         border: dotted;
-        margin: 80px 60px;
         padding-top: 15px;
         background-image: linear-gradient(to bottom, #f0f4ef, #b4cded);
+        margin: 80px 60px;
         width: 35%; }
         .containerIndex .seccionesIndex .opinion .seccionOpiniones .carOpiniones .nombreEmpresa {
           text-align: center;
@@ -276,7 +277,8 @@ body {
         .containerContacto .contacto .formularios .mensaje .titulo {
           padding-left: 0px; }
         .containerContacto .contacto .formularios .mensaje .form {
-          margin-top: 20px; }
+          margin-top: 20px;
+          font-family: "Montserrat", sans-serif; }
           .containerContacto .contacto .formularios .mensaje .form .btn {
             background-color: #b4cded; }
       .containerContacto .contacto .formularios .opinion {
@@ -284,7 +286,8 @@ body {
         .containerContacto .contacto .formularios .opinion .titulo {
           padding-left: 0px; }
         .containerContacto .contacto .formularios .opinion .form {
-          margin-top: 20px; }
+          margin-top: 20px;
+          font-family: "Montserrat", sans-serif; }
           .containerContacto .contacto .formularios .opinion .form .btn {
             background-color: #b4cded; }
 
@@ -332,6 +335,13 @@ body {
     font-size: 10px; }
     .pie .datosContacto {
       line-height: 2px; }
+  .containerIndex .seccionesIndex .seccionBienvenida {
+    margin: 80px 25px; }
+  .containerIndex .seccionesIndex .opinion .seccionOpiniones {
+    margin: 60px 40px;
+    width: 65%; }
+    .containerIndex .seccionesIndex .opinion .seccionOpiniones .carOpiniones .nombreEmpresa {
+      font-size: 14px; }
   .containerNosotros .seccionesNosotros .fotoynosotros {
     margin-bottom: 40px;
     padding-left: 10px;
@@ -353,7 +363,8 @@ body {
     max-width: 100%; }
   .containerContacto .contacto .formularios {
     grid-template-columns: 0.9fr;
-    margin: auto 10px; } }
+    margin: auto 10px;
+    row-gap: 30px; } }
 
 @media screen and (min-width: 0px) and (max-width: 320px) {
   .parrafo {
@@ -374,6 +385,13 @@ body {
     font-size: 8px; }
     .pie .datosContacto {
       line-height: 1px; }
+  .containerIndex .seccionesIndex .seccionBienvenida {
+    margin: 80px 15px; }
+  .containerIndex .seccionesIndex .opinion .seccionOpiniones {
+    margin: 60px 20px;
+    width: 85%; }
+    .containerIndex .seccionesIndex .opinion .seccionOpiniones .carOpiniones .nombreEmpresa {
+      font-size: 12px; }
   .containerNosotros .seccionesNosotros .fotoynosotros {
     margin-bottom: 40px;
     padding-left: 10px;
@@ -395,4 +413,5 @@ body {
     max-width: 100%; }
   .containerContacto .contacto .formularios {
     grid-template-columns: 0.9fr;
-    margin: auto 5px; } }
+    margin: auto 5px;
+    row-gap: 20px; } }
