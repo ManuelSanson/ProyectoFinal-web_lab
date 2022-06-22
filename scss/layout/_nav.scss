@@ -1,7 +1,7 @@
 .navbar{    
     grid-area: navbar;    
     background-color: map-get($bgColors, medio);
-    .menu .nav-link{        
+    .menu .nav-link{
         @include centeredFlex;
         color: $letraOscura;
         font-weight: bold;

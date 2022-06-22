@@ -109,7 +109,8 @@ body {
   grid-template-rows: auto 0.8fr auto 2fr;
   grid-template-areas: "encabezado" "navbar" "seccionesNosotros" "pie"; }
   .containerNosotros .seccionesNosotros {
-    grid-area: seccionesNosotros; }
+    grid-area: seccionesNosotros;
+    margin-bottom: 100px; }
     .containerNosotros .seccionesNosotros .fotoynosotros {
       margin-bottom: 100px;
       padding-left: 20px;
@@ -149,7 +150,7 @@ body {
           height: auto;
           transition: .5s ease;
           backface-visibility: hidden;
-          border-radius: 50%;
+          border-radius: 40%;
           margin-top: 20px; }
         .containerNosotros .seccionesNosotros .descripcionEquipo .container .middle {
           transition: .5s ease;
@@ -169,7 +170,7 @@ body {
             font-family: "Sora", sans-serif; }
         .containerNosotros .seccionesNosotros .descripcionEquipo .container:hover .image {
           opacity: 0.3;
-          border-radius: 50%; }
+          border-radius: 40%; }
         .containerNosotros .seccionesNosotros .descripcionEquipo .container:hover .middle {
           opacity: 1; }
 
@@ -312,6 +313,8 @@ body {
   .pie .copyright {
     display: flex;
     align-items: flex-end; }
+    .pie .copyright p {
+      margin-bottom: 3px; }
   .pie .datosContacto {
     text-align: right;
     line-height: 15px; }
@@ -355,10 +358,15 @@ body {
       width: 306px;
       margin-bottom: 20px; }
   .containerNosotros .seccionesNosotros .descripcionEquipo {
-    flex-direction: column; }
-    .containerNosotros .seccionesNosotros .descripcionEquipo img {
-      border-radius: 50%;
-      width: 236px; }
+    flex-direction: column;
+    margin-bottom: 30px; }
+    .containerNosotros .seccionesNosotros .descripcionEquipo .container .image {
+      margin-top: 15px; }
+    .containerNosotros .seccionesNosotros .descripcionEquipo .container .middle .text {
+      background-color: #344966;
+      color: white;
+      font-size: 12px;
+      padding: 10px 22px; }
   .portfolio .video iframe {
     max-width: 100%; }
   .containerContacto .contacto .formularios {
@@ -405,10 +413,15 @@ body {
       width: 286px;
       margin-bottom: 20px; }
   .containerNosotros .seccionesNosotros .descripcionEquipo {
-    flex-direction: column; }
-    .containerNosotros .seccionesNosotros .descripcionEquipo img {
-      border-radius: 50%;
-      width: 216px; }
+    flex-direction: column;
+    margin-bottom: 20px; }
+    .containerNosotros .seccionesNosotros .descripcionEquipo .container .image {
+      margin-top: 10px; }
+    .containerNosotros .seccionesNosotros .descripcionEquipo .container .middle .text {
+      background-color: #344966;
+      color: white;
+      font-size: 10px;
+      padding: 6px 14px; }
   .portfolio .video iframe {
     max-width: 100%; }
   .containerContacto .contacto .formularios {

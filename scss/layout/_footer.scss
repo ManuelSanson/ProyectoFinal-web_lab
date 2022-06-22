@@ -22,6 +22,9 @@
     .copyright{        
         display: flex;
         align-items: flex-end;
+        p{
+            margin-bottom: 3px;            
+        }
     }
     .datosContacto{        
         text-align: right;

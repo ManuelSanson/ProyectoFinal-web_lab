@@ -71,10 +71,20 @@
             }
             .descripcionEquipo{                
                 flex-direction: column;
-                img{
-                    border-radius: 50%;
-                    width: 236px;
-                }                        
+                margin-bottom: 30px;
+                .container{
+                    .image{
+                        margin-top: 15px;
+                    }
+                    .middle{
+                        .text{
+                            background-color: map-get($bgColors, oscuro);
+                            color: white;
+                            font-size: 12px;
+                            padding: 10px 22px;
+                        }
+                    }   
+                }
             }            
         }
     }
@@ -164,9 +174,19 @@
             }
             .descripcionEquipo{                
                 flex-direction: column;
-                img{
-                    border-radius: 50%;
-                    width: 216px;      
+                margin-bottom: 20px;
+                .container{
+                    .image{
+                        margin-top: 10px;
+                    }
+                    .middle{
+                        .text{
+                            background-color: map-get($bgColors, oscuro);
+                            color: white;
+                            font-size: 10px;
+                            padding: 6px 14px;
+                        }
+                    }   
                 }                        
             }            
         }

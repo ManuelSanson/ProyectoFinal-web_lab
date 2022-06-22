@@ -10,6 +10,7 @@
     ;    
     .seccionesNosotros{
         grid-area: seccionesNosotros;
+        margin-bottom: 100px;
         .fotoynosotros{    
             margin-bottom: 100px;
             padding-left: 20px;
@@ -33,12 +34,12 @@
             .seccionesSomosyMision{
                 grid-area: seccionesSomosyMision;
                 -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
-	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+	            animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
             }
         }
         .descripcionEquipo{
-            @include centeredFlex;
-            margin-bottom: 100px;
+            @include centeredFlex; 
+            margin-bottom: 100px;           
             padding-left: 20px;
             padding-right: 20px;
             .container {
@@ -51,7 +52,7 @@
                     height: auto;
                     transition: .5s ease;
                     backface-visibility: hidden;
-                    border-radius: 50%;                    
+                    border-radius: 40%;                    
                     margin-top: 20px;
                 }
                 .middle{
@@ -74,7 +75,7 @@
                 }
                 &:hover .image{
                     opacity: 0.3;
-                    border-radius: 50%;
+                    border-radius: 40%;
                 }
                 &:hover .middle{
                     opacity: 1;
