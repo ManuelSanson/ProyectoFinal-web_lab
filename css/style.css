@@ -11,7 +11,16 @@ body {
   font-family: "Sora", sans-serif;
   margin-top: 50px;
   margin-bottom: 50px;
-  padding-left: 20px; }
+  padding-left: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
+
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
 
 .titulo {
   font-family: "Sora", sans-serif;
@@ -151,7 +160,7 @@ body {
           -ms-transform: translate(-50%, -50%);
           text-align: center; }
           .containerNosotros .seccionesNosotros .descripcionEquipo .container .middle .text {
-            background-color: #344966;
+            background-color: #b4cded;
             color: #0d0531;
             font-size: 16px;
             padding: 16px 32px;
