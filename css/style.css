@@ -97,7 +97,8 @@ body {
         .containerIndex .seccionesIndex .opinion .seccionOpiniones .carOpiniones .nombreEmpresa {
           text-align: center;
           font-family: "Montserrat", sans-serif;
-          font-weight: bold; }
+          font-weight: bold;
+          padding-bottom: 28px; }
 
 @keyframes scale {
   100% {
