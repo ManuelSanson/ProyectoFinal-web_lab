@@ -319,8 +319,6 @@ body {
   .pie .datosContacto {
     text-align: right;
     line-height: 15px; }
-    .pie .datosContacto p {
-      text-decoration: none; }
 
 @media screen and (min-width: 321px) and (max-width: 425px) {
   .parrafo {
