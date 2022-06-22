@@ -318,7 +318,8 @@ body {
       margin-bottom: 3px; }
   .pie .datosContacto {
     text-align: right;
-    line-height: 15px; }
+    line-height: 15px;
+    text-decoration: none; }
 
 @media screen and (min-width: 321px) and (max-width: 425px) {
   .parrafo {
