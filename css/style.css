@@ -43,8 +43,8 @@ body {
     align-items: center; }
     .encabezado .logo_texto .logo img {
       margin-right: 20px;
-      width: 30px;
-      height: 30px; }
+      width: 40px;
+      height: 40px; }
     .encabezado .logo_texto .textoWebLab {
       font-family: "JetBrains Mono", monospace;
       color: #0d0531;
@@ -66,6 +66,7 @@ body {
       color: white; }
 
 .containerIndex {
+  background-image: url(../img/imginicio.jpg);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 0.8fr auto 2fr;
@@ -143,7 +144,7 @@ body {
       padding-right: 20px; }
       .containerNosotros .seccionesNosotros .descripcionEquipo .container {
         position: relative;
-        width: 60%; }
+        width: 50%; }
         .containerNosotros .seccionesNosotros .descripcionEquipo .container .image {
           opacity: 1;
           display: block;
@@ -306,11 +307,11 @@ body {
   .pie .redes {
     text-align: center; }
     .pie .redes .logo-redes img {
-      width: 20px;
-      height: 20px; }
+      width: 30px;
+      height: 30px; }
       .pie .redes .logo-redes img:hover {
-        width: 30px;
-        height: 30px; }
+        width: 40px;
+        height: 40px; }
   .pie .copyright {
     display: flex;
     align-items: flex-end; }
