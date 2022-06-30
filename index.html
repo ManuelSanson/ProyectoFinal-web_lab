@@ -63,7 +63,7 @@
     <section>
       <article class="seccionBienvenida">
         <h2 class="titulo">Bienvenidos</h2>
-        <p class="parrafo">Gracias por visitar nuestro sitio web. Aquí podrás conocer nuestro equipo, servicios, trabajos realizados y contactarnos en caso que desees comunicarte con nosotros. Para conocernos un poco más y saber más de nosotros, puedes hacer click <a href="./Other_pages/portfolio.html">aquí</a>.</p>
+        <p class="parrafo">Gracias por visitar nuestro sitio web. Aquí podrás conocer nuestro equipo, servicios, trabajos realizados y contactarnos en caso que desees comunicarte con nosotros. Para saber más de nuestro trabajo y conocernos un poco más, puedes hacer click <a href="./Other_pages/portfolio.html" class="button">aquí</a>.</p>
         <p class="parrafo">web_lab ofrece un servicio integral para tu sitio web: nos encargamos del diseño y la programación, la creación del contenido y su traducción.</p>
       </article>
     </section>
@@ -73,30 +73,24 @@
 
     <!--Inicia la seccion aside de opiniones-->
     <section class="opinion">
+      <h2 class="titulo">Opiniones de algunos de nuestros clientes</h2>
       <aside class="seccionOpiniones">
-        <h3 class="titulo">Opiniones</h3>
-        <div id="carouselExampleIndicators" class="carousel slide carOpiniones" data-bs-ride="true">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
+        <div class="card mb-3 cardOpinion" style="max-width: 18rem;">        
+          <div class="card-body">
+            <p class="card-text parrafo">"web_lab  nos ofreció una excelente solución a todas nuestras necesidades"</p>
+            <h5 class="card-title nombreEmpresa">Empresa A</h5>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <p class="parrafo">"web_lab  nos ofreció una excelente solución a todas nuestras necesidades"</p>
-              <p class="nombreEmpresa">Empresa A</p>
-            </div>
-            <div class="carousel-item">
-              <p class="parrafo">"web_lab nos ayudó a crear todo el contenido de nuestro sitio web y a traducirlo"</p>
-              <p class="nombreEmpresa">Empresa B</p>
-            </div>
-            <div class="carousel-item">
-              <p class="parrafo">"Se encargaron de todo el diseño de nuestro sitio, de forma rápida y eficiente"</p>
-              <p class="nombreEmpresa">Empresa C</p>
-            </div>
+        </div>
+        <div class="card mb-3 cardOpinion" style="max-width: 18rem;">        
+          <div class="card-body">
+            <p class="card-text parrafo">"web_lab nos ayudó a crear el contenido de nuestro sitio y a traducirlo"</p>
+            <h5 class="card-title nombreEmpresa">Empresa B</h5>
+          </div>
+        </div>
+        <div class="card mb-3 cardOpinion" style="max-width: 18rem;">        
+          <div class="card-body">
+            <p class="card-text parrafo">"Se encargaron de diseñar todo nuestro sitio web, de forma rápida y eficiente"</p>
+            <h5 class="card-title nombreEmpresa">Empresa C</h5>
           </div>
         </div>
       </aside>

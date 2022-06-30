@@ -18,25 +18,41 @@
             margin: 80px 60px;
             transform: scale(0.94);
             animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+            .parrafo{
+                .button{
+                    color: white;
+                    padding: 6px 6px;
+                    background: map-get($bgColors, oscuro);
+                    text-decoration: none;
+                    border-radius: 12px;
+                    &:hover{
+                        opacity: 0.8;
+                    } 
+                }  
+            }
         }
         
         .opinion{
-            @include centeredFlex;
-            margin-bottom: 100px;
+            margin-top: 50px;
+            margin-bottom: 150px;
+            width: 80%;
+            .titulo{
+                text-align: center;
+            }
             .seccionOpiniones{
-                @include cuadrosDeTexto;
-                margin: 80px 60px;
-                width: 35%;
-                .carOpiniones{
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-evenly;
+                .cardOpinion{
+                    background: linear-gradient(to bottom, map-get($bgColors, claro), map-get($bgColors, medio));
+                    text-align: center;
                     .nombreEmpresa{
-                        text-align: center;
                         font-family: $fontTexto;
                         font-weight: bold;
-                        padding-bottom: 28px;
                     }
-                }                             
+                }  
             }
-        }        
+        }      
     }
 }
 

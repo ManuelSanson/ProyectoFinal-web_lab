@@ -38,11 +38,18 @@
             .seccionBienvenida{
                 margin: 80px 25px;
             }
-            .opinion{               
+            .opinion{  
+                margin-top: 25px;
+                margin-bottom: 80px;
+                width: 100%;
+                .titulo{
+                    padding-left: 0;
+                }
                 .seccionOpiniones{
-                    margin: 60px 40px;
-                    width: 65%;
-                    .carOpiniones{
+                    margin-top: 10px;
+                    @include centeredFlex;
+                    flex-direction: column;
+                    .cardOpinion{
                         .nombreEmpresa{
                             font-size: 14px;
                         }
@@ -142,13 +149,20 @@
             .seccionBienvenida{
                 margin: 80px 15px;
             }
-            .opinion{               
+            .opinion{  
+                margin-top: 20px;
+                margin-bottom: 100px;
+                width: 100%;
+                .titulo{
+                    padding-left: 0;
+                }
                 .seccionOpiniones{
-                    margin: 60px 20px;
-                    width: 85%;
-                    .carOpiniones{
+                    margin-top: 15px;
+                    @include centeredFlex;
+                    flex-direction: column;
+                    .cardOpinion{
                         .nombreEmpresa{
-                            font-size: 12px;
+                            font-size: 16px;
                         }
                     }     
                 }

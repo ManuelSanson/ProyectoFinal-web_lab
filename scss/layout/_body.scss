@@ -10,6 +10,7 @@ body{
 
 .titulo_ppal{
     font-family: $fontTitulos;
+    color: $letraOscura;
     margin-top: 50px;
     margin-bottom: 50px;
     padding-left: 20px;
@@ -27,6 +28,7 @@ body{
 .titulo{
     font-family: $fontTitulos;
     padding-left: 20px;
+    color: $letraOscura;
 }  
 
 .parrafo{
@@ -34,5 +36,6 @@ body{
     font-style: italic;
     text-align: justify;
     padding: 20px;   
-    line-height: 24px; 
+    line-height: 24px;
+    color: $letraOscura;
 }

@@ -15,5 +15,6 @@ $fontTexto: 'Montserrat', sans-serif;
 @mixin cuadrosDeTexto{
     border: dotted;    
     padding-top: 15px;
-    background-image: linear-gradient(to bottom, map-get($bgColors, claro), map-get($bgColors, medio));
+    background: linear-gradient(to bottom, map-get($bgColors, claro), map-get($bgColors, medio));
+    font-weight: 600;
 }
