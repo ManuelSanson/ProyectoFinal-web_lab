@@ -22,12 +22,42 @@
         margin-bottom: 100px;
         .servicioDiseño{
             grid-area: servicioDiseño;
+            .diseño{
+                @include centeredFlex;
+                .imgServicio{
+                    border-radius: 10%;
+                    margin: 40px;
+                }
+                .parrafo{
+                    margin: 40px;
+                }
+            }
         }        
         .servicioCreacion{
             grid-area: servicioCreacion;
+            .copywriting{
+                @include centeredFlex;
+                .imgServicio{
+                    border-radius: 10%;
+                    margin: 40px;
+                }
+                .parrafo{
+                    margin: 40px;
+                }
+            }
         }        
         .servicioTraduccion{
             grid-area: servicioTraduccion;
+            .traduccion{
+                @include centeredFlex;
+                .imgServicio{
+                    border-radius: 10%;
+                    margin: 40px;
+                }
+                .parrafo{
+                    margin: 40px;
+                }
+            }
         }
     }
 }

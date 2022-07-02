@@ -233,10 +233,37 @@ body {
     margin-bottom: 100px; }
     .containerServicios .servicios .servicioDiseño {
       grid-area: servicioDiseño; }
+      .containerServicios .servicios .servicioDiseño .diseño {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .containerServicios .servicios .servicioDiseño .diseño .imgServicio {
+          border-radius: 10%;
+          margin: 40px; }
+        .containerServicios .servicios .servicioDiseño .diseño .parrafo {
+          margin: 40px; }
     .containerServicios .servicios .servicioCreacion {
       grid-area: servicioCreacion; }
+      .containerServicios .servicios .servicioCreacion .copywriting {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .containerServicios .servicios .servicioCreacion .copywriting .imgServicio {
+          border-radius: 10%;
+          margin: 40px; }
+        .containerServicios .servicios .servicioCreacion .copywriting .parrafo {
+          margin: 40px; }
     .containerServicios .servicios .servicioTraduccion {
       grid-area: servicioTraduccion; }
+      .containerServicios .servicios .servicioTraduccion .traduccion {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .containerServicios .servicios .servicioTraduccion .traduccion .imgServicio {
+          border-radius: 10%;
+          margin: 40px; }
+        .containerServicios .servicios .servicioTraduccion .traduccion .parrafo {
+          margin: 40px; }
 
 .containerPortfolio {
   display: grid;
@@ -333,7 +360,7 @@ body {
     text-align: right;
     line-height: 15px; }
 
-@media screen and (min-width: 321px) and (max-width: 425px) {
+@media screen and (min-width: 321px) and (max-width: 576px) {
   .parrafo {
     font-size: 14px; }
   .titulo {
