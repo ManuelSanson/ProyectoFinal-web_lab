@@ -10,9 +10,13 @@
     ;
     .portfolio{
         grid-area: portfolio;
+        .imgPortfolio{
+            @include centeredFlex;
+            margin: 80px auto;            
+        }
         .video{
-            @include centeredFlex;            
-            margin: 70px auto;
+            @include centeredFlex;
+            margin: 80px auto;
             iframe{
                 width: 853px;
                 height: 480px;                
