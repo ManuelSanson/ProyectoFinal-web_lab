@@ -16,6 +16,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>web_lab-Nosotros</title>
 </head>
 
@@ -62,15 +64,23 @@
         <!--Inicia seccion de Quienes somos y mision-->
         <section>
             <article class="fotoynosotros">
-                <div class="fotoEquipo">
+                <div class="fotoEquipo" data-aos="flip-up">
                     <img src="../img/equipodetrabajo.jpg" alt="Equipo de trabajo">
                 </div>
                 <div class="seccionesSomosyMision">
-                    <h2 class="titulo">¿Quiénes somos?</h2>
-                    <p class="parrafo">web_lab se fundó en 2022, persiguiendo la idea de ofrecer a nuestros clientes la posibilidad de construir todo su sitio web con nosotros, desde su diseño y su programación hasta la creación de su contenido y su traducción a distintos idiomas.</p>
-                    <p class="parrafo">Para ello, nuestro equipo está conformado por varios profesionales que se encargan de realizar estas tareas de la mejor manera.</p>
-                    <h2 class="titulo">Nuestra misión</h2>
-                    <p class="parrafo">Buscamos ayudar a nuestros clientes brindándoles una solución integral para sus sitios web. Somos conscientes de lo importante que es un buen sitio web para atraer potenciales clientes, atractivo, bien diseñado y fácil de navegar. También creemos en la importancia que tiene que su contenido se encuentre bien redactado y refleje las ideas de la empresa. Por último, en este mundo tan globalizado, es vital que el contenido llegue a diferentes países y culturas, y la traducción juega un rol fundamental para que ese contenido pueda entenderse en otros idiomas y se localice según la cultura de destino.</p>
+                    <div data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                        <h2 class="titulo">¿Quiénes somos?</h2>
+                        <p class="parrafo">web_lab se fundó en 2022, persiguiendo la idea de ofrecer a nuestros clientes la posibilidad de construir todo su sitio web con nosotros, desde su diseño y su programación hasta la creación de su contenido y su traducción a distintos idiomas.</p>
+                        <p class="parrafo">Para ello, nuestro equipo está conformado por varios profesionales que se encargan de realizar estas tareas de la mejor manera.</p>
+                    </div>
+                    <div data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                        <h2 class="titulo">Nuestra misión</h2>
+                        <p class="parrafo">Buscamos ayudar a nuestros clientes brindándoles una solución integral para sus sitios web. Somos conscientes de lo importante que es un buen sitio web para atraer potenciales clientes, atractivo, bien diseñado y fácil de navegar. También creemos en la importancia que tiene que su contenido se encuentre bien redactado y refleje las ideas de la empresa. Por último, en este mundo tan globalizado, es vital que el contenido llegue a diferentes países y culturas, y la traducción juega un rol fundamental para que ese contenido pueda entenderse en otros idiomas y se localice según la cultura de destino.</p>
+                    </div>
                 </div>
             </article>
         </section>
@@ -130,6 +140,11 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
     </script>
 </body>
 

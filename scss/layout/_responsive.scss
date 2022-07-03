@@ -88,7 +88,7 @@
                             background-color: map-get($bgColors, oscuro);
                             color: white;
                             font-size: 12px;
-                            padding: 10px 22px;
+                            padding: 8px 10px;
                         }
                     }   
                 }
@@ -96,7 +96,56 @@
         }
     }
 
+    .servicioDiseño{
+        .diseño{
+            @include centeredFlex;
+            flex-direction: column;
+            .imgServicio{
+                margin: 20px;
+                img{
+                    width: 350px;
+                }
+            }
+            .parrafo{
+                margin: 10px;
+            }
+        }
+    }        
+    .servicioCreacion{
+        .copywriting{
+            @include centeredFlex;
+            flex-direction: column;
+            .imgServicio{
+                margin: 20px;
+                img{
+                    width: 350px;
+                }
+            }
+            .parrafo{
+                margin: 10px;
+            }
+        }
+    }        
+    .servicioTraduccion{
+        .traduccion{
+            @include centeredFlex;
+            flex-direction: column;
+            .imgServicio{
+                margin: 20px;
+                img{
+                    width: 350px;
+                }
+            }
+            .parrafo{
+                margin: 10px;
+            }
+        }
+    }
+
     .portfolio{
+        .imgPortfolio img{
+            max-width: 90%;
+        }
         .video iframe{        
             max-width: 100%;    
         }
@@ -197,8 +246,8 @@
                         .text{
                             background-color: map-get($bgColors, oscuro);
                             color: white;
-                            font-size: 10px;
-                            padding: 6px 14px;
+                            font-size: 8px;
+                            padding: 5px 6px;
                         }
                     }   
                 }                        
@@ -206,7 +255,56 @@
         }
     }
 
+    .servicioDiseño{
+        .diseño{
+            @include centeredFlex;
+            flex-direction: column;
+            .imgServicio{
+                margin: 10px;
+                img{
+                    width: 250px;
+                }
+            }
+            .parrafo{
+                margin: 5px;
+            }
+        }
+    }        
+    .servicioCreacion{
+        .copywriting{
+            @include centeredFlex;
+            flex-direction: column;
+            .imgServicio{
+                margin: 10px;
+                img{
+                    width: 250px;
+                }
+            }
+            .parrafo{
+                margin: 5px;
+            }
+        }
+    }        
+    .servicioTraduccion{
+        .traduccion{
+            @include centeredFlex;
+            flex-direction: column;
+            .imgServicio{
+                margin: 10px;
+                img{
+                    width: 250px;
+                }
+            }
+            .parrafo{
+                margin: 5px;
+            }
+        }
+    }
+
     .portfolio{
+        .imgPortfolio img{
+            max-width: 90%;
+        }
         .video iframe{        
             max-width: 100%;
         }

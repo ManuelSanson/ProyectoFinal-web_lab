@@ -24,8 +24,6 @@
             .fotoEquipo{
                 grid-area: fotoEquipo;
                 @include centeredFlex;
-                -webkit-animation: flip-in-ver-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: flip-in-ver-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                 img{
                     border-radius: 10%;
                     width: 536px;
@@ -33,8 +31,6 @@
             }
             .seccionesSomosyMision{
                 grid-area: seccionesSomosyMision;
-                -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
-	            animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
             }
         }
         .descripcionEquipo{
@@ -85,44 +81,4 @@
     }
     
 }
-
-@keyframes slide-in-right {
-    0% {
-      -webkit-transform: translateX(1000px);
-              transform: translateX(1000px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
-  
-@-webkit-keyframes flip-in-ver-right {
-    0% {
-    -webkit-transform: rotateY(-80deg);
-    transform: rotateY(-80deg);
-    opacity: 0;
-    }
-    100% {
-    -webkit-transform: rotateY(0);
-    transform: rotateY(0);
-    opacity: 1;
-    }
-}
-
-@keyframes flip-in-ver-right {
-    0% {
-    -webkit-transform: rotateY(-80deg);
-    transform: rotateY(-80deg);
-    opacity: 0;
-    }
-    100% {
-    -webkit-transform: rotateY(0);
-    transform: rotateY(0);
-    opacity: 1;
-    }
-} 
 

@@ -137,16 +137,12 @@ body {
         grid-area: fotoEquipo;
         display: flex;
         justify-content: center;
-        align-items: center;
-        -webkit-animation: flip-in-ver-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-        animation: flip-in-ver-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+        align-items: center; }
         .containerNosotros .seccionesNosotros .fotoynosotros .fotoEquipo img {
           border-radius: 10%;
           width: 536px; }
       .containerNosotros .seccionesNosotros .fotoynosotros .seccionesSomosyMision {
-        grid-area: seccionesSomosyMision;
-        -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
-        animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both; }
+        grid-area: seccionesSomosyMision; }
     .containerNosotros .seccionesNosotros .descripcionEquipo {
       display: flex;
       justify-content: center;
@@ -188,36 +184,6 @@ body {
         .containerNosotros .seccionesNosotros .descripcionEquipo .container:hover .middle {
           opacity: 1; }
 
-@keyframes slide-in-right {
-  0% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
-    opacity: 0; }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1; } }
-
-@-webkit-keyframes flip-in-ver-right {
-  0% {
-    -webkit-transform: rotateY(-80deg);
-    transform: rotateY(-80deg);
-    opacity: 0; }
-  100% {
-    -webkit-transform: rotateY(0);
-    transform: rotateY(0);
-    opacity: 1; } }
-
-@keyframes flip-in-ver-right {
-  0% {
-    -webkit-transform: rotateY(-80deg);
-    transform: rotateY(-80deg);
-    opacity: 0; }
-  100% {
-    -webkit-transform: rotateY(0);
-    transform: rotateY(0);
-    opacity: 1; } }
-
 .containerServicios {
   display: grid;
   grid-template-columns: 1fr;
@@ -238,8 +204,9 @@ body {
         justify-content: center;
         align-items: center; }
         .containerServicios .servicios .servicioDiseño .diseño .imgServicio {
-          border-radius: 10%;
           margin: 40px; }
+          .containerServicios .servicios .servicioDiseño .diseño .imgServicio img {
+            border-radius: 10%; }
         .containerServicios .servicios .servicioDiseño .diseño .parrafo {
           margin: 40px; }
     .containerServicios .servicios .servicioCreacion {
@@ -249,8 +216,9 @@ body {
         justify-content: center;
         align-items: center; }
         .containerServicios .servicios .servicioCreacion .copywriting .imgServicio {
-          border-radius: 10%;
           margin: 40px; }
+          .containerServicios .servicios .servicioCreacion .copywriting .imgServicio img {
+            border-radius: 10%; }
         .containerServicios .servicios .servicioCreacion .copywriting .parrafo {
           margin: 40px; }
     .containerServicios .servicios .servicioTraduccion {
@@ -260,8 +228,9 @@ body {
         justify-content: center;
         align-items: center; }
         .containerServicios .servicios .servicioTraduccion .traduccion .imgServicio {
-          border-radius: 10%;
           margin: 40px; }
+          .containerServicios .servicios .servicioTraduccion .traduccion .imgServicio img {
+            border-radius: 10%; }
         .containerServicios .servicios .servicioTraduccion .traduccion .parrafo {
           margin: 40px; }
 
@@ -277,6 +246,9 @@ body {
       justify-content: center;
       align-items: center;
       margin: 80px auto; }
+    .containerPortfolio .portfolio .wobble-hor-bottom {
+      -webkit-animation: wobble-hor-bottom 1s 1s both;
+      animation: wobble-hor-bottom 1s 1s both; }
     .containerPortfolio .portfolio .video {
       display: flex;
       justify-content: center;
@@ -302,6 +274,52 @@ body {
 @keyframes pulsate {
   0% {
     box-shadow: 0 0 25px #0d0531, 0 0 50px #344966; } }
+
+@-webkit-keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%; }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg); }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg); }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg); }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg); }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg); } }
+
+@keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%; }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg); }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg); }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg); }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg); }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg); } }
 
 .containerContacto {
   display: grid;
@@ -421,7 +439,42 @@ body {
       background-color: #344966;
       color: white;
       font-size: 12px;
-      padding: 10px 22px; }
+      padding: 8px 10px; }
+  .servicioDiseño .diseño {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .servicioDiseño .diseño .imgServicio {
+      margin: 20px; }
+      .servicioDiseño .diseño .imgServicio img {
+        width: 350px; }
+    .servicioDiseño .diseño .parrafo {
+      margin: 10px; }
+  .servicioCreacion .copywriting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .servicioCreacion .copywriting .imgServicio {
+      margin: 20px; }
+      .servicioCreacion .copywriting .imgServicio img {
+        width: 350px; }
+    .servicioCreacion .copywriting .parrafo {
+      margin: 10px; }
+  .servicioTraduccion .traduccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .servicioTraduccion .traduccion .imgServicio {
+      margin: 20px; }
+      .servicioTraduccion .traduccion .imgServicio img {
+        width: 350px; }
+    .servicioTraduccion .traduccion .parrafo {
+      margin: 10px; }
+  .portfolio .imgPortfolio img {
+    max-width: 90%; }
   .portfolio .video iframe {
     max-width: 100%; }
   .containerContacto .contacto .formularios {
@@ -484,8 +537,43 @@ body {
     .containerNosotros .seccionesNosotros .descripcionEquipo .container .middle .text {
       background-color: #344966;
       color: white;
-      font-size: 10px;
-      padding: 6px 14px; }
+      font-size: 8px;
+      padding: 5px 6px; }
+  .servicioDiseño .diseño {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .servicioDiseño .diseño .imgServicio {
+      margin: 10px; }
+      .servicioDiseño .diseño .imgServicio img {
+        width: 250px; }
+    .servicioDiseño .diseño .parrafo {
+      margin: 5px; }
+  .servicioCreacion .copywriting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .servicioCreacion .copywriting .imgServicio {
+      margin: 10px; }
+      .servicioCreacion .copywriting .imgServicio img {
+        width: 250px; }
+    .servicioCreacion .copywriting .parrafo {
+      margin: 5px; }
+  .servicioTraduccion .traduccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .servicioTraduccion .traduccion .imgServicio {
+      margin: 10px; }
+      .servicioTraduccion .traduccion .imgServicio img {
+        width: 250px; }
+    .servicioTraduccion .traduccion .parrafo {
+      margin: 5px; }
+  .portfolio .imgPortfolio img {
+    max-width: 90%; }
   .portfolio .video iframe {
     max-width: 100%; }
   .containerContacto .contacto .formularios {
