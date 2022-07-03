@@ -18,20 +18,21 @@
         "servicioCreacion"
         "servicioTraduccion"
         ;
-        row-gap: 30px;
+        row-gap: 70px;
         margin-bottom: 100px;
+        max-width: 100%;
         .servicioDiseño{
             grid-area: servicioDiseño;
             .diseño{
                 @include centeredFlex;
                 .imgServicio{
-                    margin: 40px;
+                    margin: 20px;
                     img{
                         border-radius: 10%;
                     }
                 }
                 .parrafo{
-                    margin: 40px;
+                    margin: 20px;
                 }
             }
         }        
@@ -40,13 +41,13 @@
             .copywriting{
                 @include centeredFlex;
                 .imgServicio{
-                    margin: 40px;
+                    margin: 20px;
                     img{
                         border-radius: 10%;
                     }
                 }
                 .parrafo{
-                    margin: 40px;
+                    margin: 20px;
                 }
             }
         }        
@@ -55,13 +56,13 @@
             .traduccion{
                 @include centeredFlex;
                 .imgServicio{
-                    margin: 40px;
+                    margin: 20px;
                     img{
                         border-radius: 10%;
                     }
                 }
                 .parrafo{
-                    margin: 40px;
+                    margin: 20px;
                 }
             }
         }

@@ -28,6 +28,8 @@
 
     .pie{
         font-size: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
         .datosContacto{
             line-height: 2px;
         }
@@ -96,48 +98,51 @@
         }
     }
 
-    .servicioDiseño{
-        .diseño{
-            @include centeredFlex;
-            flex-direction: column;
-            .imgServicio{
-                margin: 20px;
-                img{
-                    width: 350px;
+    .servicios{
+        row-gap: 30px;
+        .servicioDiseño{
+            .diseño{
+                @include centeredFlex;
+                flex-direction: column;
+                .imgServicio{
+                    margin: 20px;
+                    img{
+                        width: 350px;
+                    }
+                }
+                .parrafo{
+                    margin: 10px;
                 }
             }
-            .parrafo{
-                margin: 10px;
-            }
-        }
-    }        
-    .servicioCreacion{
-        .copywriting{
-            @include centeredFlex;
-            flex-direction: column;
-            .imgServicio{
-                margin: 20px;
-                img{
-                    width: 350px;
+        }        
+        .servicioCreacion{
+            .copywriting{
+                @include centeredFlex;
+                flex-direction: column;
+                .imgServicio{
+                    margin: 20px;
+                    img{
+                        width: 350px;
+                    }
+                }
+                .parrafo{
+                    margin: 10px;
                 }
             }
-            .parrafo{
-                margin: 10px;
-            }
-        }
-    }        
-    .servicioTraduccion{
-        .traduccion{
-            @include centeredFlex;
-            flex-direction: column;
-            .imgServicio{
-                margin: 20px;
-                img{
-                    width: 350px;
+        }        
+        .servicioTraduccion{
+            .traduccion{
+                @include centeredFlex;
+                flex-direction: column;
+                .imgServicio{
+                    margin: 20px;
+                    img{
+                        width: 350px;
+                    }
                 }
-            }
-            .parrafo{
-                margin: 10px;
+                .parrafo{
+                    margin: 10px;
+                }
             }
         }
     }
@@ -188,6 +193,8 @@
 
     .pie{
         font-size: 8px;
+        padding-left: 5px;
+        padding-right: 5px;
         .datosContacto{
             line-height: 1px;
         }

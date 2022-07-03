@@ -195,8 +195,9 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "servicioDiseño" "servicioCreacion" "servicioTraduccion";
-    row-gap: 30px;
-    margin-bottom: 100px; }
+    row-gap: 70px;
+    margin-bottom: 100px;
+    max-width: 100%; }
     .containerServicios .servicios .servicioDiseño {
       grid-area: servicioDiseño; }
       .containerServicios .servicios .servicioDiseño .diseño {
@@ -204,11 +205,11 @@ body {
         justify-content: center;
         align-items: center; }
         .containerServicios .servicios .servicioDiseño .diseño .imgServicio {
-          margin: 40px; }
+          margin: 20px; }
           .containerServicios .servicios .servicioDiseño .diseño .imgServicio img {
             border-radius: 10%; }
         .containerServicios .servicios .servicioDiseño .diseño .parrafo {
-          margin: 40px; }
+          margin: 20px; }
     .containerServicios .servicios .servicioCreacion {
       grid-area: servicioCreacion; }
       .containerServicios .servicios .servicioCreacion .copywriting {
@@ -216,11 +217,11 @@ body {
         justify-content: center;
         align-items: center; }
         .containerServicios .servicios .servicioCreacion .copywriting .imgServicio {
-          margin: 40px; }
+          margin: 20px; }
           .containerServicios .servicios .servicioCreacion .copywriting .imgServicio img {
             border-radius: 10%; }
         .containerServicios .servicios .servicioCreacion .copywriting .parrafo {
-          margin: 40px; }
+          margin: 20px; }
     .containerServicios .servicios .servicioTraduccion {
       grid-area: servicioTraduccion; }
       .containerServicios .servicios .servicioTraduccion .traduccion {
@@ -228,11 +229,11 @@ body {
         justify-content: center;
         align-items: center; }
         .containerServicios .servicios .servicioTraduccion .traduccion .imgServicio {
-          margin: 40px; }
+          margin: 20px; }
           .containerServicios .servicios .servicioTraduccion .traduccion .imgServicio img {
             border-radius: 10%; }
         .containerServicios .servicios .servicioTraduccion .traduccion .parrafo {
-          margin: 40px; }
+          margin: 20px; }
 
 .containerPortfolio {
   display: grid;
@@ -376,7 +377,14 @@ body {
         height: 40px; }
   .pie .copyright {
     display: flex;
-    align-items: flex-end; }
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column; }
+    .pie .copyright img {
+      width: 32px;
+      margin-bottom: 8px; }
+      .pie .copyright img:hover {
+        width: 40px; }
     .pie .copyright p {
       margin-bottom: 3px; }
   .pie .datosContacto {
@@ -399,7 +407,9 @@ body {
   .menu a {
     font-size: 14px; }
   .pie {
-    font-size: 10px; }
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px; }
     .pie .datosContacto {
       line-height: 2px; }
   .containerIndex .seccionesIndex .seccionBienvenida {
@@ -440,39 +450,41 @@ body {
       color: white;
       font-size: 12px;
       padding: 8px 10px; }
-  .servicioDiseño .diseño {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
-    .servicioDiseño .diseño .imgServicio {
-      margin: 20px; }
-      .servicioDiseño .diseño .imgServicio img {
-        width: 350px; }
-    .servicioDiseño .diseño .parrafo {
-      margin: 10px; }
-  .servicioCreacion .copywriting {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
-    .servicioCreacion .copywriting .imgServicio {
-      margin: 20px; }
-      .servicioCreacion .copywriting .imgServicio img {
-        width: 350px; }
-    .servicioCreacion .copywriting .parrafo {
-      margin: 10px; }
-  .servicioTraduccion .traduccion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
-    .servicioTraduccion .traduccion .imgServicio {
-      margin: 20px; }
-      .servicioTraduccion .traduccion .imgServicio img {
-        width: 350px; }
-    .servicioTraduccion .traduccion .parrafo {
-      margin: 10px; }
+  .servicios {
+    row-gap: 30px; }
+    .servicios .servicioDiseño .diseño {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .servicios .servicioDiseño .diseño .imgServicio {
+        margin: 20px; }
+        .servicios .servicioDiseño .diseño .imgServicio img {
+          width: 350px; }
+      .servicios .servicioDiseño .diseño .parrafo {
+        margin: 10px; }
+    .servicios .servicioCreacion .copywriting {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .servicios .servicioCreacion .copywriting .imgServicio {
+        margin: 20px; }
+        .servicios .servicioCreacion .copywriting .imgServicio img {
+          width: 350px; }
+      .servicios .servicioCreacion .copywriting .parrafo {
+        margin: 10px; }
+    .servicios .servicioTraduccion .traduccion {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .servicios .servicioTraduccion .traduccion .imgServicio {
+        margin: 20px; }
+        .servicios .servicioTraduccion .traduccion .imgServicio img {
+          width: 350px; }
+      .servicios .servicioTraduccion .traduccion .parrafo {
+        margin: 10px; }
   .portfolio .imgPortfolio img {
     max-width: 90%; }
   .portfolio .video iframe {
@@ -498,7 +510,9 @@ body {
   .menu a {
     font-size: 12px; }
   .pie {
-    font-size: 8px; }
+    font-size: 8px;
+    padding-left: 5px;
+    padding-right: 5px; }
     .pie .datosContacto {
       line-height: 1px; }
   .containerIndex .seccionesIndex .seccionBienvenida {

@@ -21,7 +21,16 @@
     }
     .copyright{        
         display: flex;
-        align-items: flex-end;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        img{
+            width: 32px;
+            margin-bottom: 8px;
+            &:hover{
+                width: 40px;
+            }
+        }
         p{
             margin-bottom: 3px;            
         }
