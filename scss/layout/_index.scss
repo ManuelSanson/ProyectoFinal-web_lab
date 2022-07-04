@@ -9,6 +9,7 @@
     "seccionesIndex"
     "pie"
     ;
+    max-width: 100%;
     .seccionesIndex{
         grid-area: seccionesIndex;
         @include centeredFlex;

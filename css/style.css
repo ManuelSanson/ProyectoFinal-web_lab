@@ -73,7 +73,8 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 0.8fr auto 2fr;
-  grid-template-areas: "encabezado" "navbar" "seccionesIndex" "pie"; }
+  grid-template-areas: "encabezado" "navbar" "seccionesIndex" "pie";
+  max-width: 100%; }
   .containerIndex .seccionesIndex {
     grid-area: seccionesIndex;
     display: flex;
@@ -421,7 +422,7 @@ body {
     padding-right: 10px; }
     .pie .copyright img {
       width: 25px;
-      margin-bottom: 20px; }
+      margin-bottom: 25px; }
     .pie .datosContacto {
       line-height: 2px; }
   .containerIndex .seccionesIndex .seccionBienvenida {
