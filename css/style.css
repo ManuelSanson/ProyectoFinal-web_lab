@@ -198,7 +198,8 @@ body {
     grid-template-areas: "servicioDiseño" "servicioCreacion" "servicioTraduccion";
     row-gap: 70px;
     margin-bottom: 100px;
-    max-width: 100%; }
+    max-width: 100%;
+    overflow-x: hidden; }
     .containerServicios .servicios .servicioDiseño {
       grid-area: servicioDiseño; }
       .containerServicios .servicios .servicioDiseño .diseño {
