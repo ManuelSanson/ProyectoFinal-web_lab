@@ -73,8 +73,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 0.8fr auto 2fr;
-  grid-template-areas: "encabezado" "navbar" "seccionesIndex" "pie";
-  max-width: 100%; }
+  grid-template-areas: "encabezado" "navbar" "seccionesIndex" "pie"; }
   .containerIndex .seccionesIndex {
     grid-area: seccionesIndex;
     display: flex;
@@ -104,6 +103,7 @@ body {
       .containerIndex .seccionesIndex .opinion .titulo {
         text-align: center; }
       .containerIndex .seccionesIndex .opinion .seccionOpiniones {
+        overflow-x: hidden;
         margin-top: 20px;
         display: flex;
         justify-content: space-evenly; }
