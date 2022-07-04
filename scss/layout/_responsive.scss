@@ -27,9 +27,15 @@
     }
 
     .pie{
-        font-size: 10px;
+        font-size: 8px;
         padding-left: 10px;
         padding-right: 10px;
+        .copyright{
+            img{
+                width: 25px;
+                margin-bottom: 15px;
+            }
+        }
         .datosContacto{
             line-height: 2px;
         }
@@ -82,6 +88,7 @@
                 flex-direction: column;
                 margin-bottom: 30px;
                 .container{
+                    width: 70%;
                     .image{
                         margin-top: 15px;
                     }
@@ -98,50 +105,52 @@
         }
     }
 
-    .servicios{
-        row-gap: 30px;
-        .servicioDiseño{
-            .diseño{
-                @include centeredFlex;
-                flex-direction: column;
-                .imgServicio{
-                    margin: 20px;
-                    img{
-                        width: 350px;
+    .containerServicios{
+        .servicios{
+            row-gap: 40px;
+            .servicioDiseño{
+                .diseño{
+                    @include centeredFlex;
+                    flex-direction: column;
+                    .imgServicio{
+                        margin: 20px;
+                        img{
+                            width: 350px;
+                        }
+                    }
+                    .parrafo{
+                        margin: 10px;
                     }
                 }
-                .parrafo{
-                    margin: 10px;
-                }
-            }
-        }        
-        .servicioCreacion{
-            .copywriting{
-                @include centeredFlex;
-                flex-direction: column;
-                .imgServicio{
-                    margin: 20px;
-                    img{
-                        width: 350px;
+            }        
+            .servicioCreacion{
+                .copywriting{
+                    @include centeredFlex;
+                    flex-direction: column;
+                    .imgServicio{
+                        margin: 20px;
+                        img{
+                            width: 350px;
+                        }
+                    }
+                    .parrafo{
+                        margin: 10px;
                     }
                 }
-                .parrafo{
-                    margin: 10px;
-                }
-            }
-        }        
-        .servicioTraduccion{
-            .traduccion{
-                @include centeredFlex;
-                flex-direction: column;
-                .imgServicio{
-                    margin: 20px;
-                    img{
-                        width: 350px;
+            }        
+            .servicioTraduccion{
+                .traduccion{
+                    @include centeredFlex;
+                    flex-direction: column;
+                    .imgServicio{
+                        margin: 20px;
+                        img{
+                            width: 350px;
+                        }
                     }
-                }
-                .parrafo{
-                    margin: 10px;
+                    .parrafo{
+                        margin: 10px;
+                    }
                 }
             }
         }
@@ -192,9 +201,15 @@
     }
 
     .pie{
-        font-size: 8px;
+        font-size: 6px;
         padding-left: 5px;
         padding-right: 5px;
+        .copyright{
+            img{
+                width: 20px;
+                margin-bottom: 15px;
+            }
+        }
         .datosContacto{
             line-height: 1px;
         }
@@ -246,6 +261,7 @@
                 flex-direction: column;
                 margin-bottom: 20px;
                 .container{
+                    width: 70%;
                     .image{
                         margin-top: 10px;
                     }
@@ -262,48 +278,53 @@
         }
     }
 
-    .servicioDiseño{
-        .diseño{
-            @include centeredFlex;
-            flex-direction: column;
-            .imgServicio{
-                margin: 10px;
-                img{
-                    width: 250px;
+    .containerServicios{
+        .servicios{
+            row-gap: 20px;
+            .servicioDiseño{
+                .diseño{
+                    @include centeredFlex;
+                    flex-direction: column;
+                    .imgServicio{
+                        margin: 10px;
+                        img{
+                            width: 250px;
+                        }
+                    }
+                    .parrafo{
+                        margin: 5px;
+                    }
                 }
-            }
-            .parrafo{
-                margin: 5px;
-            }
-        }
-    }        
-    .servicioCreacion{
-        .copywriting{
-            @include centeredFlex;
-            flex-direction: column;
-            .imgServicio{
-                margin: 10px;
-                img{
-                    width: 250px;
+            }        
+            .servicioCreacion{
+                .copywriting{
+                    @include centeredFlex;
+                    flex-direction: column;
+                    .imgServicio{
+                        margin: 10px;
+                        img{
+                            width: 250px;
+                        }
+                    }
+                    .parrafo{
+                        margin: 5px;
+                    }
                 }
-            }
-            .parrafo{
-                margin: 5px;
-            }
-        }
-    }        
-    .servicioTraduccion{
-        .traduccion{
-            @include centeredFlex;
-            flex-direction: column;
-            .imgServicio{
-                margin: 10px;
-                img{
-                    width: 250px;
+            }        
+            .servicioTraduccion{
+                .traduccion{
+                    @include centeredFlex;
+                    flex-direction: column;
+                    .imgServicio{
+                        margin: 10px;
+                        img{
+                            width: 250px;
+                        }
+                    }
+                    .parrafo{
+                        margin: 5px;
+                    }
                 }
-            }
-            .parrafo{
-                margin: 5px;
             }
         }
     }
