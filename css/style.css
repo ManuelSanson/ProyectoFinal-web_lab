@@ -383,8 +383,8 @@ body {
     align-items: center;
     flex-direction: column; }
     .pie .copyright img {
-      width: 32px;
-      margin-bottom: 20px; }
+      width: 40px;
+      margin-bottom: 35px; }
     .pie .copyright .jump {
       transform-origin: 50% 50%;
       animation: jump .5s linear alternate infinite; }
